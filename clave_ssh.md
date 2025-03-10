@@ -6,4 +6,7 @@
 
 `**ssh-keygen -t ed25519 -C "dev············@··.com"**`
 
-Generating public/private ed25519 key pair. Enter file in which to save the key (/home/gerar\_kde/.ssh/id\_ed25519):
+Generating public/private ed25519 key pair. Enter file in which to save the key (/home/gerar\_kde/.ssh/id\_ed25519):   
+ 
+
+![Enter](https://github.com/Gerardo-Mtnz-Dev/linux_repo/blob/main/Img/Enter.png)
