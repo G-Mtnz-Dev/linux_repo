@@ -1,8 +1,8 @@
-# **KDE PLASMA UTILIDADES** \[Goto PDF\]
+# **KDE PLASMA UTILIDADES** \[[Goto PDF](https://github.com/Gerardo-Mtnz-Dev/linux_repo/blob/main/Docs/Utilidades-KdePlasma.pdf)\]
 
 ## **GOOGLE DRIVE CON RCLONE**
 
-Fuente (Ver primero el video):    [https://www.youtube.com/watch?v=_0BYb_OQsE4](https://www.youtube.com/watch?v=_0BYb_OQsE4)    y     [https://aprendolinux.com/conecta-google-drive-en-linux-con-rclone/](https://aprendolinux.com/conecta-google-drive-en-linux-con-rclone/) 
+Fuente (Ver primero el video):    [https://www.youtube.com/watch?v=_0BYb_OQsE4](https://www.youtube.com/watch?v=_0BYb_OQsE4)    y     [https://aprendolinux.com/conecta-google-drive-en-linux-con-rclone/](https://aprendolinux.com/conecta-google-drive-en-linux-con-rclone/) 
 
 ### `**INSTAL Y CONFIG RCLONE**`
 
@@ -14,23 +14,23 @@ Fuente (Ver primero el video):    [https://www.youtube.com/watch?v=_0BYb_OQsE4
 
 `**rclone config**`
 
-*   Selecciona la opción para **agregar un nuevo remoto**. 
+*   Selecciona la opción para **agregar un nuevo remoto**.
 
              En este caso, seleccionaremos “n” y presionaremos Enter.
 
-*   **Elige un nombre para tu remoto.** Este nombre será utilizado para referirse a tu conexión Google Drive en rclone. 
+*   **Elige un nombre para tu remoto.** Este nombre será utilizado para referirse a tu conexión Google Drive en rclone.
 
               Puedes usar cualquier nombre descriptivo que desees.
 
-*   **Selecciona el tipo de almacenamiento** que usarás. 
+*   **Selecciona el tipo de almacenamiento** que usarás.
 
              Para Google Drive, selecciona drive (13) y presiona Enter.
 
-*   **Configura** la aplicación de **Google Drive**. Sigue las instrucciones que aparecen en la terminal para **obtener el token de autorización**. 
+*   **Configura** la aplicación de **Google Drive**. Sigue las instrucciones que aparecen en la terminal para **obtener el token de autorización**.
 
               Esto te permitirá acceder a tu Google Drive desde rclone.
 
-*   Selecciona los **ajustes de configuración predeterminados.** Para la mayoría de los casos, los ajustes predeterminados son adecuados. 
+*   Selecciona los **ajustes de configuración predeterminados.** Para la mayoría de los casos, los ajustes predeterminados son adecuados.
 
                O también puedes personalizarlos según tus necesidades.
 
@@ -46,7 +46,7 @@ Fuente (Ver primero el video):    [https://www.youtube.com/watch?v=_0BYb_OQsE4
 
             Se abrirá un navegador ante ti y permite configurar tu cuenta de Google con rclone.
 
-### **MONTAR GDRIVE CON RCLONE** 
+### **MONTAR GDRIVE CON RCLONE**
 
 *   **Crear la Carpeta** donde se montará Drive
 
@@ -54,19 +54,19 @@ Fuente (Ver primero el video):    [https://www.youtube.com/watch?v=_0BYb_OQsE4
 
 *   **Montar Drive** en la Carpeta
 
-`**rclone mount gdrive: ~/Drive &  # (**`Se pone “**&**” para que monte el servicio y salga, y no se quede ahí pillado )#
+`**rclone mount gdrive: ~/Drive &  # (**`Se pone “\*\*&\*\*” para que monte el servicio y salga, y no se quede ahí pillado )#
 
 ---
 
-## **ACTUALIZACIÓN y LIMPIEZA DEL SISTEMA:** 
+## **ACTUALIZACIÓN y LIMPIEZA DEL SISTEMA:**
 
-*   **UPDATE:** 
+*   **UPDATE:**
 
              actualiza la lista de paquetes para comprobar si hay nuevos.
 
 `**sudo apt update**`
 
-*   **UPGRADE** y **FULL-UPGRADE**: 
+*   **UPGRADE** y **FULL-UPGRADE**:
 
              actualiza los paquetes instalados. Full   actualiza tanto los paquetes instalados como otros del sistema como el kernel.
 
@@ -74,13 +74,13 @@ Fuente (Ver primero el video):    [https://www.youtube.com/watch?v=_0BYb_OQsE4
 
 `**sudo apt full-upgrade**`
 
-*   **REFRESH**: 
+*   **REFRESH**:
 
              actualiza los paquetes instantáneos.
 
 `**sudo snap refresh**`
 
-*   **AUTOCLEAN** y **CLEAN**: 
+*   **AUTOCLEAN** y **CLEAN**:
 
              eliminan el caché local de paquetes.
 
@@ -88,7 +88,7 @@ Fuente (Ver primero el video):    [https://www.youtube.com/watch?v=_0BYb_OQsE4
 
 `**sudo apt clean**`
 
-*   **AUTOREMOVE**: 
+*   **AUTOREMOVE**:
 
              elimina todos los paquetes que ya no son necesarios. Suele ocurrir cuando se desinstala algún programa y quedan dependencias de este que ya no se usan.
 
@@ -132,7 +132,7 @@ Etiqueta **Datos**
 
 UUID **524F567904D39ECB**
 
-**Por el directorio donde está montado** 
+**Por el directorio donde está montado**
 
 `**sudo mount -t ntfs /dev/sda3 /media/DATOS/**`
 
