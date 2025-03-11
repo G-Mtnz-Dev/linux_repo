@@ -1,0 +1,5 @@
+# ignore ALL .xcf files
+*.xcf
+
+# ignore ALL files in ANY directory named temp
+temp/
