@@ -1,5 +1,18 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    .gitigore                                          :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: Gerardo Mtnz <dev.gmartinez@gmail.com>     +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2025/03/11 21:42:13 by Gerardo Mtn       #+#    #+#              #
+#    Updated: 2025/03/11 21:42:21 by Gerardo Mtn      ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 # ignore ALL .xcf files
 *.xcf
 
 # ignore ALL files in ANY directory named temp
 temp/
+
