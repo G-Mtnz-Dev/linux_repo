@@ -6,7 +6,7 @@
 #    By: Gerardo Mtnz <dev.gmartinez@gmail.com>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/03/11 21:42:13 by Gerardo Mtn       #+#    #+#              #
-#    Updated: 2025/03/11 21:42:21 by Gerardo Mtn      ###   ########.fr        #
+#    Updated: 2025/03/14 04:07:31 by Gerardo Mtn      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,3 +16,19 @@
 # ignore ALL files in ANY directory named temp
 temp/
 
+# ignora los archivos que genera Bash
+*.swo
+
+# ignora los archivos que genera Vim
+*.swp
+
+# ignora los archivos que genera VS Code
+*.vscode
+
+# ignora los archivos temporales que genera Files
+*.DS_store
+
+# ignora los archivos temporales que genera Linux
+.~*.*#
+
+#fin
