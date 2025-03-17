@@ -6,9 +6,12 @@
 #    By: Gerardo Mtnz <dev.gmartinez@gmail.com>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/03/11 21:42:13 by Gerardo Mtn       #+#    #+#              #
-#    Updated: 2025/03/14 04:07:31 by Gerardo Mtn      ###   ########.fr        #
+#    Updated: 2025/03/17 09:30:32 by Gerardo Mtn      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
+
+# ignore EDITABLE-DOCS 
+*.odt
 
 # ignore ALL .xcf files
 *.xcf
