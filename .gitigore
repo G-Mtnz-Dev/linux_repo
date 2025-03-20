@@ -6,9 +6,12 @@
 #    By: Gerardo Mtnz <dev.gmartinez@gmail.com>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/03/11 21:42:13 by Gerardo Mtn       #+#    #+#              #
-#    Updated: 2025/03/17 09:30:32 by Gerardo Mtn      ###   ########.fr        #
+#    Updated: 2025/03/21 00:14:48 by Gerardo Mtn      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
+
+# ignore ALL files named .directory
+*.directory
 
 # ignore EDITABLE-DOCS 
 *.odt
