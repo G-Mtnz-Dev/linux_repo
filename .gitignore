@@ -10,12 +10,12 @@
 #                                                                              #
 # **************************************************************************** #
 
-# ignore ALL files named .directory
-*.directory
+#------------------------------------------------
+# IGNORA LOS ARCHIVOS DEL REPO LOCAL 
+#------------------------------------------------
 
-# ignore directory named Docs_edit
+# ignore dir Docs_edit
 /linux_docs/Docs_edit
-
 
 # ignore EDITABLE-DOCS 
 *.odt
@@ -23,16 +23,27 @@
 # ignore ALL .xcf files
 *.xcf
 
-# ignore ALL files in ANY directory named temp
-temp/
+#------------------------------------------------
+# IGNORA LOS ARCHIVOS DE COMPILACIÓN DE C 
+#------------------------------------------------
 
-# IGNORA LOS ARCHIVOS TEMPORALES QUE GENERA LINUX
+# Ignorar los Archivos de compilación de C:
+*.out
+*.o
+
+#------------------------------------------------
+# IGNORA LOS ARCHIVOS QUE GENERA LINUX
+#------------------------------------------------
+
+# Ignore all Folder Icon Files
+*.directory
 
 # ignora los archivos que genera Bash
 *.swo
 
 # Archivos que genera Vim
 *.swp
+*.swo
 
 # Aarchivos que genera VSCode
 *.vscode
@@ -40,9 +51,14 @@ temp/
 # Archivos temporales que genera Files
 *.DS_store
 
+#------------------------------------------------
+# IGNORA LOS ARCHIVOS TEMPORALES DEL SISTEMA
+#------------------------------------------------
+
+# ignore ALL files in ANY directory named temp
+temp/
+
 # Archivos de respaldo y temporales
-*.swp       # Archivos temporales de Vim
-*.swo       # Más archivos temporales de Vim
 *.bak       # Archivos de respaldo (.bak)
 *.tmp       # Archivos temporales generales
 *.~*        # Archivos con tilde (~) al final (backup)
@@ -58,6 +74,7 @@ temp/
 # Archivos de sesiones y bloqueos
 .lock
 *.pid
+
 
 
 
