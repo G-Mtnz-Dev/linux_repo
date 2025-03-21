@@ -6,12 +6,16 @@
 #    By: Gerardo Mtnz <dev.gmartinez@gmail.com>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/03/11 21:42:13 by Gerardo Mtn       #+#    #+#              #
-#    Updated: 2025/03/21 00:14:48 by Gerardo Mtn      ###   ########.fr        #
+#    Updated: 2025/03/21 06:42:48 by Gerardo Mtn      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 # ignore ALL files named .directory
 *.directory
+
+# ignore directory named Docs_edit
+/linux_docs/Docs_edit
+
 
 # ignore EDITABLE-DOCS 
 *.odt
@@ -22,19 +26,38 @@
 # ignore ALL files in ANY directory named temp
 temp/
 
+# IGNORA LOS ARCHIVOS TEMPORALES QUE GENERA LINUX
+
 # ignora los archivos que genera Bash
 *.swo
 
-# ignora los archivos que genera Vim
+# Archivos que genera Vim
 *.swp
 
-# ignora los archivos que genera VS Code
+# Aarchivos que genera VSCode
 *.vscode
 
-# ignora los archivos temporales que genera Files
+# Archivos temporales que genera Files
 *.DS_store
 
-# ignora los archivos temporales que genera Linux
-.~*.*#
+# Archivos de respaldo y temporales
+*.swp       # Archivos temporales de Vim
+*.swo       # Más archivos temporales de Vim
+*.bak       # Archivos de respaldo (.bak)
+*.tmp       # Archivos temporales generales
+*.~*        # Archivos con tilde (~) al final (backup)
 
-#fin
+# Caché del sistema
+.cache/
+.thumbnails/
+.Trash-*/
+
+# Logs del sistema
+*.log
+
+# Archivos de sesiones y bloqueos
+.lock
+*.pid
+
+
+
