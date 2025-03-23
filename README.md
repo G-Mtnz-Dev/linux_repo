@@ -1,11 +1,11 @@
-# **linux\_repo** 'My Linux Testing Place'
+
++# **linux\_repo** 'My Linux Testing Place'
 
 ![](/home/gerar_kde/Code/Git-Code/linux_repo/vs_config/image.png)
 
 ## **My Linux Computer:**
 
-####   
-**\===== HARDWARE ============================================**  
+#### **\===== HARDWARE ============================================
 Procesadores: 8 × Intel® Core™ i5-8250U CPU @ 1.60GHz  
 Memoria: 7,7 GiB de RAM  
 Procesador gráfico: NVIDIA GeForce MX110/PCIe/SSE2  
@@ -14,7 +14,7 @@ Nombre del producto: HP Laptop 15-da0xxx
 Número de Serie: CND8215S3D  
 Versión del sistema: Type1ProductConfigId
 
-#### **\===== SISTEMA ===============================================**  
+#### **\===== SISTEMA ===============================================
 Sistema operativo: Kubuntu 24.04  
 Versión de KDE Plasma: 5.27.12  
 Versión de KDE Frameworks: 5.115.0  
@@ -22,7 +22,7 @@ Versión de Qt: 5.15.13
 Versión del kernel: 6.11.0-19-generic (64 bits)  
 Plataforma gráfica: X11
 
-#### **\===== CPU ===================================================**  
+#### **\===== CPU ===================================================
 Arquitectura: x86\_64  
 modo(s) de operación de las CPUs: 32-bit, 64-bit  
 Address sizes: 39 bits physical, 48 bits virtual  
@@ -42,7 +42,7 @@ CPU MHz máx.: 3400,0000
 CPU MHz mín.: 400,0000  
 Virtualización: VT-x
 
-#### **\===== DISK ==================================================**  
+#### **\===== DISK ==================================================
 Model Family: Phison Driven SSDs  
 Device Model: KINGSTON SA400S37480G  
 Serial Number: 50026B76855E27AB  
@@ -112,13 +112,5 @@ This system has HSI runtime issues.
 ### **Host Security Events**  
 2025-01-26 12:12:37: ✘ Kernel is tainted ✘  
 2025-01-18 04:34:09: ✔ Kernel is no longer tainted ✔
-
-Gerardo Martinez 
-
-Linktree 
-Web 
-G·Mail
-
-
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
