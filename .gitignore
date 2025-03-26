@@ -30,6 +30,7 @@
 # Ignorar los Archivos de mi CabeceradeArchivo
 my_header.*
 !my_header.md
+
 #------------------------------------------------
 # IGNORA LOS ARCHIVOS DE COMPILACIÓN DE C 
 #------------------------------------------------
