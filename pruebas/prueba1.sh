@@ -15,5 +15,3 @@ sudo mount -t ntfs UUID=524F567904D39ECB /media/DATOS/
 sudo apt update && sudo apt upgrade && sudo snap refresh && sudo apt autoclean && sudo apt clean && sudo apt autoremove
 
 rclone mount gdrive: ~/Drive &
-
-exit
