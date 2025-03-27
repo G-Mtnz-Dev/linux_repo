@@ -27,7 +27,7 @@
 # IGNORA MIS ARCHIVOS DE CABECERA  
 #------------------------------------------------
 
-# Ignorar los Archivos de mi CabeceradeArchivo
+# Ignorar los Archivos de mi Cabecera de Archivo excepto el Md
 my_header.*
 !my_header.md
 
