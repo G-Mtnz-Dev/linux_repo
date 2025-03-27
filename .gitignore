@@ -19,6 +19,7 @@
 
 # ignore EDITABLE-DOCS 
 *.odt
+*.docx
 
 # ignore ALL .xcf files
 *.xcf
