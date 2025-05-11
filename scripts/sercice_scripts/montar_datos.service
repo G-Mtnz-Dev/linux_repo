@@ -1,0 +1,11 @@
+[Unit]
+Description=Montar partición Datos D (NTFS)
+After=local-fs.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/montar_datos.sh
+RemainAfterExit=true
+
+[Install]
+WantedBy=multi-user.target
