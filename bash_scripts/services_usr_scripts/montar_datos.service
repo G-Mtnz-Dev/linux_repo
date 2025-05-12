@@ -1,5 +1,5 @@
 [Unit]
-Description=Montar partición Datos D (NTFS)
+Description=Montar partición Datos-D (NTFS)
 After=local-fs.target
 
 [Service]

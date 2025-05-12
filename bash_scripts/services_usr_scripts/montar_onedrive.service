@@ -1,0 +1,22 @@
+[Unit]
+Description=Montar MS One Drive al inicio
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/montar_onedrive.sh
+
+User=gerar_kde
+Group=gerar_kde
+Restart=on-failure
+RestartSec=15
+TimeoutSec=60
+Environment=PATH=/usr/bin:/bin
+
+# Opcional: limita cuánto puede fallar antes de dejar de intentar
+StartLimitIntervalSec=300
+StartLimitBurst=5
+
+[Install]
+WantedBy=default.target
