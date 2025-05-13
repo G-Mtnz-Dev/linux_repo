@@ -87,3 +87,41 @@ sudo systemctl daemon-reexec
 sudo systemctl daemon-reload
 sudo systemctl restart montar_onedrive.service
 ```
+
+## ERRORES
+
+### **1 - UNIDAD D : no me deja crear carpetas (No soy adninistrador)**
+
+#### **🔧 Problemas Identificados:**
+
+**Permisos insuficientes:** El script intenta montar una unidad en `/media/DATOS`, pero si no estás ejecutando el script como root, no tienes permisos para montar ni para escribir en ese punto de montaje.
+
+**Directorio** `**/media/DATOS**`**:** Por defecto, este directorio es propiedad de `root` y requiere permisos especiales para escritura o montaje.
+
+#### **✅ Solucion**
+
+#### Añadir una entrada en `/etc/fstab` para permitir el montaje sin sudo
+
+Puedes permitir que el usuario monte la partición automáticamente o manualmente sin `sudo`. Para ello, edita el archivo `/etc/fstab`:
+
+Abre el archivo con un editor de texto como root:
+
+Añade una línea como esta:
+
+```
+UUID=524F567904D39ECB  /media/DATOS  ntfs3  rw,user,uid=1000,gid=1000,umask=022  0  0
+```
+
+`user`: permite que un usuario normal monte el sistema de archivos.
+
+`uid=1000`, `gid=1000`: establece el propietario del punto de montaje.
+
+`umask=022`: permisos predeterminados.
+
+Ahora deberías poder montar la unidad Sin necesidad de `sudo`. con:
+
+```
+mount /media/DATOS
+```
+
+Sin necesidad de `sudo`.
