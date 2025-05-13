@@ -81,7 +81,7 @@ temp/
 *.log
 
 # Archivos de sesiones y bloqueos
-.lock
+*.lock
 *.pid
 
 
