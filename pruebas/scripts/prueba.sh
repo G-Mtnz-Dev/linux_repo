@@ -1,4 +1,4 @@
-#!bin/bash
+#!bin/bash/
 #usr/bin/prueba.sh
 
 sudo apt update
