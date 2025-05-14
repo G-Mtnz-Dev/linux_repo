@@ -29,7 +29,7 @@ if [ ! -w "$MOUNT_POINT" ]; then
 fi
 
 # Intentamos montar
-mount -t $FS_TYPE -o rw,uid=1000,gid=1000,umask=022 UUID=$UUID "$MOUNT_POINT"
+mount -t $FS_TYPE -o rw,uid=1001,gid=1001,umask=022 UUID=$UUID "$MOUNT_POINT"
 STATUS=$?
 
 if [ $STATUS -eq 0 ]; then
