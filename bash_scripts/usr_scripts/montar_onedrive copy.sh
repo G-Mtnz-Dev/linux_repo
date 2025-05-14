@@ -14,18 +14,18 @@ if [ -f "$LOG_FILE" ] && [ "$(wc -l < "$LOG_FILE")" -gt 500 ]; then
 fi
 
 # Registro inicial
-echo "[$TIMESTAMP] Inicio del montaje de Google Drive" >> "$LOG_FILE"
+echo "[$TIMESTAMP] Iniciando montaje de OneDrive..."
 
 # Verifica si ya está montado
 if mountpoint -q "$MOUNT_POINT"; then
-    echo "Google Drive ya está montado en $MOUNT_POINT" >> "$LOG_FILE"
+    echo "OneDrive ya está montado en $MOUNT_POINT."
     exit 0
 fi
 
-# Verifica que el punto de montaje exista
+# Verifica que el directorio de montaje existe
 if [ ! -d "$MOUNT_POINT" ]; then
-    echo "Error: el directorio $MOUNT_POINT no existe." >> "$LOG_FILE"
-    exit 1
+echo "Error: el directorio $MOUNT_POINT no existe."
+exit 2
 fi
 
 # Verifica si hay conectividad antes de montar
@@ -34,10 +34,7 @@ if ! ping -c 1 -W 2 www.googleapis.com &> /dev/null; then
     exit 2
 fi
 
-# Montar con rclone
-echo "[$(date '+%Y-%m-%d %H:%M:%S')] Ejecutando rclone mount..." >> "$LOG_FILE"
-
-# Este exec reemplazará el script por rclone solo si llega hasta aquí
+# Ejecuta rclone en modo foreground (sin --daemon, lo controla systemd)
 exec /usr/bin/rclone mount \
     onedrive: "$MOUNT_POINT" \
     --vfs-cache-mode writes \
@@ -48,14 +45,3 @@ exec /usr/bin/rclone mount \
     --umask 002 \
     --log-level INFO \
     --log-file "$LOG_FILE"
-
-# Si exec falla, se ejecutará esta parte (lo cual no debería pasar normalmente)
-# Copia el log al directorio del usuario (solo si no fue reemplazado por exec)
-if [ -d "$DEST_DIR" ]; then
-    cp "$LOG_FILE" "$DEST_LOG"
-    echo "[Info] Log copiado a $DEST_LOG" >> "$LOG_FILE"
-else
-    echo "[Warning] No se pudo copiar el log a $DEST_DIR (no existe)" >> "$LOG_FILE"
-fi
-
-exit 0

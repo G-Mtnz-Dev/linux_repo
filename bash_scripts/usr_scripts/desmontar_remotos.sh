@@ -1,4 +1,5 @@
 #!/bin/bash
+#/usr/local/bin/desmontar_remotos.sh
 
 # Rutas a tus puntos de montaje
 DRIVE_MOUNT="/home/gerar_kde/Drive"

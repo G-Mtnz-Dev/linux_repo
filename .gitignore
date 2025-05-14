@@ -15,11 +15,12 @@
 #------------------------------------------------
 
 # ignore dir Docs_edit
-/linux_docs/Docs_edit
+/linux_docs/docs_edit
 
 # ignore EDITABLE-DOCS 
-*.odt
-*.docx
+#*.odt
+#*.odt#
+#*.docx
 
 # ignore ALL .xcf files
 *.xcf
