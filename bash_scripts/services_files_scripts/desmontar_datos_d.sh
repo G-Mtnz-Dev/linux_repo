@@ -15,16 +15,6 @@ fi
 # Registro inicial
 echo "[Shutdown] $(date '+%Y-%m-%d %H:%M:%S') - Intentando desmontar unidad D..." >> "$PERSISTENT_LOG"
 
-# Función para copiar el log si existe el directorio destino
-copiar_log_a_home() {
-if [ -d "$DEST_DIR" ]; then
-cp "$PERSISTENT_LOG" "$DEST_LOG"
-echo "Log copiado a $DEST_LOG" >> "$PERSISTENT_LOG"
-else
-echo "Directorio de destino no encontrado: $DEST_DIR" >> "$PERSISTENT_LOG"
-fi
-}
-
 # Función de desmontaje
 desmontar_si() {
 MOUNT_PATH="$1"
@@ -38,6 +28,17 @@ echo "No estaba montado: $MOUNT_PATH" >> "$PERSISTENT_LOG"
 fi
 }
 
+# Función para copiar el log si existe el directorio destino
+copiar_log_a_home() {
+if [ -d "$DEST_DIR" ]; then
+cp "$PERSISTENT_LOG" "$DEST_LOG"
+echo "Log copiado a $DEST_LOG" >> "$PERSISTENT_LOG"
+else
+echo "Directorio de destino no encontrado: $DEST_DIR" >> "$PERSISTENT_LOG"
+fi
+}
+
 desmontar_si "$DATOS_MOUNT"
+
 exit 0
 
