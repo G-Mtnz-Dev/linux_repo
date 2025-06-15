@@ -98,6 +98,6 @@ temp/
 #------------------------------------------------
 
 # Archivos DataBse de Syncro
-*.ffs_db
+#*.ffs_db
 
 #FIN
