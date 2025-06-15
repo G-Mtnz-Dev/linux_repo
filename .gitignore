@@ -93,11 +93,4 @@ temp/
 *.lock
 *.pid
 
-#------------------------------------------------
-# IGNORA LOS ARCHIVOS DE SINCRONIZACIÓN
-#------------------------------------------------
-
-# Archivos DataBse de Syncro
-#*.ffs_db
-
 #FIN
